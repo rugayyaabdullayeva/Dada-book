@@ -1,0 +1,14 @@
+.main{
+    width: 98%;
+    margin: 20px auto auto;
+    min-height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    & .main-title{
+        margin: 80px 0px 40px;
+        font-size: 45px;
+        font-weight: 800;
+    }
+}
