@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
-import Card from './components/Card';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -14,7 +13,6 @@ function App() {
     <div className="App">
       <Header onSearch={handleSearch} />
       <Main books={books} />
-      <Card/>
     </div>
   );
 }

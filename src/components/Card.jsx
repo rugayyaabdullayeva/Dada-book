@@ -1,22 +1,20 @@
 import { Card } from 'antd';
-const { Meta } = Card;
 import React from 'react';
 
-const Card = ({ product }) => {
+const { Meta } = Card;
+
+const BookCard = ({ book }) => {
   return (
     <div>
       <Card
         hoverable
         style={{ width: 240 }}
-        cover={
-          <img
-            alt="example"
-            src={product.imageLinks.smallThumbnail} />
-        }
+        cover={<img alt={book.volumeInfo.title} src={book.volumeInfo.imageLinks.smallThumbnail} />}
       >
-        <Meta title="Europe Street beat" description="www.instagram.com" />
+        <Meta title={book.volumeInfo.title} description={book.volumeInfo.previewLink} />
       </Card>
     </div>
-  )
+  );
 };
-export default Card;
+
+export default BookCard;

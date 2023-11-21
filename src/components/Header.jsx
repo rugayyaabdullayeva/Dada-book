@@ -13,9 +13,7 @@ const Header = ({ onSearch }) => {
 
     try {
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
-          query
-        )}&key=YOUR_GOOGLE_BOOKS_API_KEY`
+        `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&key=AIzaSyBG2lxMMTXzeTP2KyheEYt9FSaFri2frWY`
       );
 
       if (!response.ok) {
